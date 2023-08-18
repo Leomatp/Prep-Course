@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Curriculum Vitae</h1>
+    <h2>Descripción Personal:</h2>
+    <p>Soy estudiante de la carrera Computación e Informática, me apasionan los animes y el futbol.</p>
+    <h2>Educación:</h2>
+    <p>Primaria:Santa Rosa 2008-2013</p>
+    <p>Secundaria:Ingenieros Uni 2014-2018</p>
+    <p>Superior o Técnico:Cibertec 2021-actualidad</p>
+    <h2>Experiencias Laborales</h2>
+    <p>No cuento con experiencia laboral</p>
+    <h2>Skills:</h2>
+    <p>Excel: Intermedio</p>
+    <p>Ingles:Intermedio</p>
+    <p>Sql y MySql:Intermedio</p>
+    <h2>Foto</h2>
+    <img src="" alt="miFoto">
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Ver anime</li>
+        <li>Ver o jugar fútbol</li>
+        <li>Escuchar música</li>
+    </ul>
+    <script>
+        function objetoMatriz(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                let temp = arr[i]
+                let j = i - 1
+                while (j >= 0 && temp.length < arr[j].length) {
+                    arr[j + 1] = arr[j]
+                    j--
+                }
+                arr[j + 1] = temp
+                // console.info(temp.length)
+                console.info(arr[2].length);
+            }
+            
+            // console.log(arr);
+        }
+        objetoMatriz(["You", "are", "beautiful", "looking"]);
+    </script>
+</body>
+
+</html>
